@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/card3_dialog_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+
+            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp"
+            android:text="简答题"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!-- 评价部分 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingHorizontal="12dp"
+        android:layout_height="wrap_content">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:id="@+id/scroll_container"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/test1"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:text="表现作者对权贵的否定，又无改变现实，以消极的办法反抗的诗句是"-->
+                <!--                    android:textSize="16sp"-->
+                <!--                    android:layout_height="wrap_content"/>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    <EditText-->
+                <!--                        android:id="@+id/edit_text"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:hint="请输入"-->
+                <!--                        android:textSize="16sp"-->
+                <!--                        android:layout_height="wrap_content"/>-->
+
+                <!--                    <ImageView-->
+                <!--                        android:id="@+id/criticism"-->
+                <!--                        android:layout_width="24dp"-->
+                <!--                        android:src="@drawable/ic_correct"-->
+                <!--                        android:visibility="gone"-->
+                <!--                        android:layout_height="24dp"/>-->
+
+                <!--                </LinearLayout>-->
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <!-- 确认按钮 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/confirm_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomButton3Style"
+                android:text="确认"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                android:layout_marginRight="3dp"
+                android:elevation="2dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dialog_close_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="@string/close"
+            android:scaleType="centerInside"
+            android:layout_gravity="end"
+            android:padding="4dp" />
+
+    </LinearLayout>
+</LinearLayout>

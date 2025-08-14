@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义Tab的字体大小样式 -->
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">18sp</item> <!-- 设置字体大小 -->
+        <item name="android:textColor">@color/tab_text_color</item> <!-- 设置未选中文字颜色 -->
+        <item name="android:textStyle">normal</item> <!-- 设置字体样式 -->
+    </style>
+
+    <!-- 仅上部两个角为圆角 -->
+    <style name="TopRoundedCorners">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">8dp</item>
+        <item name="cornerSizeTopRight">8dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <!-- 四个角均为圆角 -->
+    <style name="AllRoundedCorners">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="CustomButtonStyle" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/white</item>
+        <item name="rippleColor">@color/button_pressed_color</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="strokeWidth">0dp</item> <!-- 移除边框 -->
+        <item name="strokeColor">@color/gray</item> <!-- 设置边框颜色为透明 -->
+        <item name="android:background">@null</item> <!-- 确保没有背景 -->
+    </style>
+
+    <style name="CustomButton2Style" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/button_normal_color</item>
+        <item name="rippleColor">@color/button_pressed_color</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="strokeWidth">1dp</item> <!-- 移除边框 -->
+        <item name="strokeColor">@color/gray</item> <!-- 设置边框颜色为透明 -->
+        <item name="android:background">@null</item> <!-- 确保没有背景 -->
+    </style>
+
+    <style name="CustomButton3Style" parent="Widget.Material3.Button">
+        <item name="backgroundTint">#3FFFFFFF</item>
+        <item name="rippleColor">@color/button_pressed_color</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="strokeWidth">0dp</item> <!-- 移除边框 -->
+        <item name="strokeColor">@android:color/transparent</item> <!-- 设置边框颜色为透明 -->
+        <item name="android:background">@null</item> <!-- 确保没有背景 -->
+    </style>
+
+</resources>

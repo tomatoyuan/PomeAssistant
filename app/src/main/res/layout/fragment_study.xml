@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.StudyFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/my_light_primary"
+        android:layout_height="35dp"/>
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/app_background"
+        android:layout_height="match_parent">
+
+        <!-- TabLayout -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_shadow_end_color"
+            app:tabIndicatorColor="#055B66"
+            app:tabIndicatorFullWidth="false"
+            app:tabTextColor="@color/tab_text_color"
+            app:tabSelectedTextColor="@color/tab_selected_color"
+            app:tabMode="scrollable"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            app:tabTextAppearance="@style/CustomTabTextAppearance"/>
+
+        <!-- ViewPager2 -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

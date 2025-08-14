@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/rounded_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按钮的背景颜色 -->
+    <solid android:color="#f5f2ea" />
+
+    <!-- 设置圆角弧度 -->
+    <corners android:radius="16dp" /> <!-- 16dp 是圆角弧度，可以根据需要调整 -->
+
+    <!-- 可选：设置按钮边框 -->
+    <stroke
+        android:width="3dp"
+        android:color="#FF0000" /> <!-- 边框宽度和颜色 -->
+</shape>

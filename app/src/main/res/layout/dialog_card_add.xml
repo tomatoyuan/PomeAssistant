@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/card3_dialog_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp"
+            android:gravity="center"
+            android:text="输入习题卡片的题目"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!-- 评价部分 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingHorizontal="12dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:elevation="4dp"
+                android:background="@drawable/search_background"
+                android:layout_height="40dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:src="@drawable/magnifier"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="搜索图标"
+                        android:scaleType="centerInside"
+                        android:layout_height="24dp"/>
+
+                    <!-- 搜索输入框 -->
+                    <EditText
+                        android:id="@+id/editTextCardTitle"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:textSize="16sp"
+                        android:inputType="text"
+                        android:hint="输入习题卡片的题目"
+                        android:layout_gravity="center_vertical" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <!-- 确认按钮 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_add_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomButton3Style"
+                android:text="确认"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                android:layout_marginRight="3dp"
+                android:elevation="2dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dialog_close_button_card_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="@string/close"
+            android:scaleType="centerInside"
+            android:layout_gravity="end"
+            android:padding="4dp" />
+
+    </LinearLayout>
+</LinearLayout>

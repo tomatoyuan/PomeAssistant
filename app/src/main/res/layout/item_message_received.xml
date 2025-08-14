@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/recv_image_view_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_poemast" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+<!--        <TextView-->
+<!--            android:id="@+id/recv_text_view_message"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/message_received_background"-->
+<!--            android:padding="12dp"-->
+<!--            android:text="Received message"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textIsSelectable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:focusableInTouchMode="true"/>-->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/recv_text_view_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_received_background"
+            android:autoLink="web"
+            android:gravity="start"
+            android:lineSpacingExtra="5dp"
+            android:text="Received message"
+            android:textColor="@android:color/black"
+            android:padding="12dp"
+            android:textIsSelectable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/received_image_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/card_background1"
+            android:visibility="gone"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/recv_text_view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="12:00 PM"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:textIsSelectable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/my_light_primary"
+        android:layout_height="35dp"/>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_above="@id/bottomNavigationView"
+        android:layout_height="match_parent"/>
+
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottomNavigationView"-->
+<!--        android:background="@color/my_light_primary"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_width="match_parent"-->
+<!--        app:menu="@menu/bottom_nav_menu"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+    <LinearLayout
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/my_light_primary"
+        android:layout_height="60dp">
+
+
+        <!-- 导航项1: 学习 -->
+        <LinearLayout
+            android:id="@+id/nav_study"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/icon_study"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/study_selector"
+                android:clickable="true"
+                android:focusable="true"/> <!-- 默认图标 -->
+
+        </LinearLayout>
+
+        <!-- 导航项2: 检查 -->
+        <LinearLayout
+            android:id="@+id/nav_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/icon_check"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/check_selector"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <!-- 导航项3: 复习 -->
+        <LinearLayout
+            android:id="@+id/nav_review"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/icon_review"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/review_selector"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <!-- 导航项4: 朕 -->
+        <LinearLayout
+            android:id="@+id/nav_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/icon_me"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/me_selector"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.MethodFragmentCategorization">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <!-- 分割线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD" /> <!-- 灰色的分割线 -->
+
+        <TextView
+            android:id="@+id/category_method"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="分类记忆法" />
+
+        <!-- 分割线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD" /> <!-- 灰色的分割线 -->
+
+        <!-- 使用 ScrollView 来包裹可滑动的内容 -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@android:color/transparent"> <!-- 背景颜色，随需求调整 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/transparent_rounded_background"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- 标题 -->
+                        <TextView
+                            android:id="@+id/poem_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="登高"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_gravity="center_horizontal" />
+
+                        <!-- 内容文本 -->
+                        <TextView
+                            android:id="@+id/original_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="风急天高猿啸哀，渚清沙白鸟飞回。\n无边落木萧萧下，不尽长江滚滚来。\n万里悲秋常作客，百年多病独登台。\n艰难苦恨繁霜鬓，潦倒新停浊酒杯。"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16sp"
+                            android:lineSpacingExtra="4dp"
+                            android:textColor="#000000" /> <!-- 调整文字颜色，黑色 #000000 -->
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- 分割线 -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#BDBDBD" /> <!-- 灰色的分割线 -->
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:src="@drawable/method_cate_pic1"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="start"
+                    android:layout_height="50dp"/>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/category_text"
+                        android:layout_width="match_parent"
+                        android:text="正在生成关键词记忆方法推荐..."
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content"/>
+
+                </ScrollView>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:text="描写景物："-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:lineSpacingExtra="4dp"-->
+<!--                    android:textColor="#000000" />-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:layout_height="3dp"-->
+<!--                    android:background="@drawable/dashed_line"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:layout_marginBottom="16dp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:text="象征手法："-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:lineSpacingExtra="4dp"-->
+<!--                    android:textColor="#000000" />-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:layout_height="3dp"-->
+<!--                    android:background="@drawable/dashed_line"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:layout_marginBottom="16dp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:text="写景抒情："-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:lineSpacingExtra="4dp"-->
+<!--                    android:textColor="#000000" />-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:layout_height="3dp"-->
+<!--                    android:background="@drawable/dashed_line"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:layout_marginBottom="16dp" />-->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

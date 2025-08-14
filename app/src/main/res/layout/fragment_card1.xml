@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.CardFragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/detailImageView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/card1_bg"
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+                android:layout_marginTop="16dp"
+                app:shapeAppearanceOverlay="@style/AllRoundedCorners"/>
+
+
+            <!-- 原文 -->
+            <LinearLayout
+                android:id="@+id/original_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="3dp">
+
+                    <!-- 三角符号 -->
+                    <ImageView
+                        android:id="@+id/expand_icon0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+                    <!-- 标题文本 -->
+                    <TextView
+                        android:id="@+id/original_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="原文"
+                        android:fontFamily="@font/fangzhengguanjunkaishui"
+                        android:textSize="22sp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <!-- 可折叠的内容区域，默认隐藏 -->
+                <TextView
+                    android:id="@+id/original_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="这里是详细内容"
+                    android:fontFamily="@font/fangzhengpangshuxingshu"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+
+            <!-- 译文 -->
+            <LinearLayout
+                android:id="@+id/translation_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="3dp">
+
+                    <!-- 三角符号 -->
+                    <ImageView
+                        android:id="@+id/expand_icon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+                    <!-- 标题文本 -->
+                    <TextView
+                        android:id="@+id/translation_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="译文"
+                        android:fontFamily="@font/fangzhengguanjunkaishui"
+                        android:textSize="22sp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <!-- 可折叠的内容区域，默认隐藏 -->
+                <TextView
+                    android:id="@+id/translation_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="这里是详细内容"
+                    android:visibility="gone"
+                    android:fontFamily="@font/fangzhengpangshuxingshu"
+                    android:textSize="18sp"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+
+            <!-- 注释 -->
+            <LinearLayout
+                android:id="@+id/comment_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="3dp">
+
+                    <!-- 三角符号 -->
+                    <ImageView
+                        android:id="@+id/expand_icon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+                    <!-- 标题文本 -->
+                    <TextView
+                        android:id="@+id/comment_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="注释"
+                        android:fontFamily="@font/fangzhengguanjunkaishui"
+                        android:textSize="22sp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <!-- 可折叠的内容区域，默认隐藏 -->
+                <TextView
+                    android:id="@+id/comment_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="这里是详细内容"
+                    android:visibility="gone"
+                    android:fontFamily="@font/fangzhengpangshuxingshu"
+                    android:textSize="18sp"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+
+            <!-- 写作手法 -->
+            <LinearLayout
+                android:id="@+id/approach_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="3dp">
+
+                    <!-- 三角符号 -->
+                    <ImageView
+                        android:id="@+id/expand_icon9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+                    <!-- 标题文本 -->
+                    <TextView
+                        android:id="@+id/approach"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="写作手法"
+                        android:fontFamily="@font/fangzhengguanjunkaishui"
+                        android:textSize="22sp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <!-- 可折叠的内容区域，默认隐藏 -->
+                <TextView
+                    android:id="@+id/approach_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="这里是详细内容"
+                    android:fontFamily="@font/fangzhengpangshuxingshu"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+
+            <!-- 作者简介 -->
+            <LinearLayout
+                android:id="@+id/author_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="3dp">
+
+                    <!-- 三角符号 -->
+                    <ImageView
+                        android:id="@+id/expand_icon3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+                    <!-- 标题文本 -->
+                    <TextView
+                        android:id="@+id/author_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="作者简介"
+                        android:fontFamily="@font/fangzhengguanjunkaishui"
+                        android:textSize="22sp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <!-- 可折叠的内容区域，默认隐藏 -->
+                <TextView
+                    android:id="@+id/author_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="这里是详细内容"
+                    android:visibility="gone"
+                    android:fontFamily="@font/fangzhengpangshuxingshu"
+                    android:textSize="18sp"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+
+            <!-- 作品简介 -->
+            <LinearLayout
+                android:id="@+id/work_intro_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="3dp">
+
+                    <!-- 三角符号 -->
+                    <ImageView
+                        android:id="@+id/expand_icon4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+                    <!-- 标题文本 -->
+                    <TextView
+                        android:id="@+id/work_introdution"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="作品简介"
+                        android:fontFamily="@font/fangzhengguanjunkaishui"
+                        android:textSize="22sp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <!-- 可折叠的内容区域，默认隐藏 -->
+                <TextView
+                    android:id="@+id/work_intro_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="这里是详细内容"
+                    android:visibility="gone"
+                    android:fontFamily="@font/fangzhengpangshuxingshu"
+                    android:textSize="18sp"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+
+            <!-- 创作背景 -->
+            <LinearLayout
+                android:id="@+id/creative_bg_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="3dp">
+
+                    <!-- 三角符号 -->
+                    <ImageView
+                        android:id="@+id/expand_icon5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+                    <!-- 标题文本 -->
+                    <TextView
+                        android:id="@+id/creative_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="创作背景"
+                        android:fontFamily="@font/fangzhengguanjunkaishui"
+                        android:textSize="22sp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <!-- 可折叠的内容区域，默认隐藏 -->
+                <TextView
+                    android:id="@+id/creative_bg_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="这里是详细内容"
+                    android:visibility="gone"
+                    android:fontFamily="@font/fangzhengpangshuxingshu"
+                    android:textSize="18sp"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+
+
+            <!-- 作品赏析 -->
+            <LinearLayout
+                android:id="@+id/appreciation_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="3dp">
+
+                    <!-- 三角符号 -->
+                    <ImageView
+                        android:id="@+id/expand_icon6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+                    <!-- 标题文本 -->
+                    <TextView
+                        android:id="@+id/appreciation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="作品赏析"
+                        android:fontFamily="@font/fangzhengguanjunkaishui"
+                        android:textSize="22sp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <!-- 可折叠的内容区域，默认隐藏 -->
+                <TextView
+                    android:id="@+id/appreciation_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="这里是详细内容"
+                    android:visibility="gone"
+                    android:fontFamily="@font/fangzhengpangshuxingshu"
+                    android:textSize="18sp"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

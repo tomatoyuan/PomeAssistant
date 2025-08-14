@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="520dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg_chart">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/poem_title"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp"
+            android:text="将进酒"
+            android:fontFamily="@font/tianshiyantidaziku"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!-- 评价部分 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingHorizontal="3dp"
+        android:alpha="0.8"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/chartWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

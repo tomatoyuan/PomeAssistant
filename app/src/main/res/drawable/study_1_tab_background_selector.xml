@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 选中状态的背景颜色 -->
+    <item android:state_selected="true" android:drawable="@drawable/study_1_tab_selected_background" />
+
+    <!-- 默认未选中的背景颜色 -->
+    <item android:drawable="@drawable/study_1_tab_unselected_background" />
+
+</selector>

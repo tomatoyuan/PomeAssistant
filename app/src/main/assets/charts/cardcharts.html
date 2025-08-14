@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECharts</title>
+        <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+    </head>
+    <body>
+        <!-- 设置图表的宽高比 -->
+        <div id="chart" style="width: 100%; height: 330px;"></div>
+
+        <script>
+            var chart = echarts.init(document.getElementById('chart'));
+
+            var option = {
+                tooltip: {
+                    trigger: 'axis'
+                },
+                grid: {
+                    top: 50,    // 控制图表内容距离顶部的距离
+                    bottom: 80, // 控制图表内容距离底部的距离
+                    left: 35,   // 控制图表内容距离左侧的距离
+                    right: 20   // 控制图表内容距离右侧的距离
+                },
+                legend: {
+                    data: ['背诵错误', '习题错题'],
+                    orient: 'horizontal',  // 设置图例为水平排列
+                    top: 5  // 设置图例在图表底部距离下边界10px
+                },
+                xAxis: {
+                    type: 'category',
+                    data: [],           // '第1次复习', '第2次复习', '第3次复习', '第4次复习'
+                    axisLabel: {
+                        interval: 0,  // 确保显示所有标签
+                        rotate: 0,     // 使标签水平显示，如需倾斜可调整此值
+                        lineHeight: 11,  // 控制行间距，确保标签换行
+                    }
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: [
+                    {
+                        name: '背诵错误',
+                        type: 'line',
+                        data: [],               // 6, 4, 3, 0
+                        itemStyle: {
+                            color: '#FFFFFF',       // 填充色设置为白色
+                            borderColor: '#FFD700',     // 边框颜色
+                            borderWidth: 2              // 边框宽度
+                        },
+                        lineStyle: {
+                            color: '#FFD700',
+                            width: 2
+                        },
+                        symbol: 'rect',
+                        symbolSize: 8
+                    },
+                    {
+                        name: '习题错题',
+                        type: 'line',
+                        data: [],
+                        itemStyle: {
+                            color: '#FFFFFF',
+                            borderColor: '#FF4500',
+                            borderWidth: 2
+                        },
+                        lineStyle: {
+                            color: '#FF4500',
+                            width: 2
+                        },
+                        symbol: 'circle',
+                        symbolSize: 8
+                    }
+                ],
+                // 添加 dataZoom 组件
+                dataZoom: [
+                    {
+                        type: 'slider', // 滑动条 dataZoom
+                        start: 0, // 起始视图窗口
+                        end: 100, // 默认展示所有数据
+                        xAxisIndex: [0], // 作用在 x 轴
+                        handleSize: '100%', // 使滑动条更易点击
+                    }
+                ]
+            };
+
+            chart.setOption(option);
+
+            // 更新数据的函数
+            function updateData(poetryData, exerciseData, dates) {
+                console.log("Updating data:", poetryData, exerciseData, dates); // 调试用
+
+                chart.setOption({
+                    xAxis: {
+                        data: dates  // 使用传入的日期作为横坐标标签
+                    },
+                    series: [
+                        {
+                            name: '背诵错误',
+                            data: poetryData
+                        },
+                        {
+                            name: '习题错题',
+                            data: exerciseData
+                        }
+                    ]
+                });
+            }
+        </script>
+    </body>
+</html>

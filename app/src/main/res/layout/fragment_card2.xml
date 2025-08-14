@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".fragment.CardFragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!-- 使用 NestedScrollView 包裹整个布局 -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <!-- RecyclerView for displaying chat messages -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_above="@+id/message_input_layout"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="8dp"
+                android:clipToPadding="false"
+                android:padding="8dp" />
+
+            <!-- Layout for inputting messages -->
+            <LinearLayout
+                android:id="@+id/message_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:elevation="2dp">
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_voice"
+                    android:background="?attr/selectableItemBackground"
+                    android:scaleType="centerInside"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:layout_height="30dp"/>
+
+                <!-- EditText for typing messages -->
+                <EditText
+                    android:id="@+id/edit_text_message"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:hint="请输入聊天内容"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/edit_text_background"
+                    android:paddingLeft="8dp"
+                    android:paddingVertical="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:imeOptions="actionSend"
+                    android:inputType="text" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_expression"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:scaleType="centerInside"
+                    android:layout_height="30dp"/>
+
+                <!-- Button for sending messages -->
+                <ImageButton
+                    android:id="@+id/button_send"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="Send"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_send"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CardFragment3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <!-- TODO: Update blank fragment layout -->
+<!--        <TextView-->
+<!--            android:id="@+id/tips_img"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:text="名句获取中..."-->
+<!--            android:textSize="30sp"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_images"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:clipToPadding="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="80dp">
+
+<!--            <ImageView-->
+<!--                android:id="@+id/regenerate_img"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:src="@drawable/regenerate_img2"-->
+<!--                android:scaleType="centerInside"-->
+<!--                android:padding="5dp"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:layout_height="match_parent"/>-->
+
+            <!-- 使用空的 View 占据中间的空间 -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+
+            <ImageView
+                android:id="@+id/write_brush"
+                android:layout_width="80dp"
+                android:layout_gravity="end"
+                android:src="@drawable/pen_image"
+                android:scaleType="centerInside"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

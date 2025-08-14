@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- 句子文本 -->
+    <TextView
+        android:id="@+id/textViewSentence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="示例句子"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <!-- 描述图片，初始为隐藏 -->
+    <ImageView
+        android:id="@+id/imageViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:src="@drawable/toast_pic1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="3dp"
+        android:background="@drawable/dashed_line"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

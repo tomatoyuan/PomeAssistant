@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_study"
+        android:icon="@drawable/study_selector"
+        android:title="学习" />
+    <item
+        android:id="@+id/action_check"
+        android:icon="@drawable/check_selector"
+        android:title="检查" />
+    <item
+        android:id="@+id/action_review"
+        android:icon="@drawable/review_selector"
+        android:title="复习" />
+    <item
+        android:id="@+id/action_me"
+        android:icon="@drawable/me_selector"
+        android:title="朕" />
+</menu>

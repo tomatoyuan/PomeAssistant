@@ -1,0 +1,13 @@
+<!-- res/drawable/card_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 定义填充色，如果需要透明边框可以设置为透明 -->
+    <solid android:color="#5fF8F8F8" /> <!-- 背景颜色，保持一致 -->
+
+    <!-- 定义圆角 -->
+    <corners android:radius="16dp" />
+
+    <!-- 定义边框的颜色和宽度 -->
+    <stroke
+        android:width="2dp"
+        android:color="#BDBDBD" /> <!-- 边框颜色 -->
+</shape>

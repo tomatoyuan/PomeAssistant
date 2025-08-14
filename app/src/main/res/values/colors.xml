@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#999595</color>
+    <color name="my_light_primary">#86908a</color>
+    <color name="tab_text_color">#808080</color>
+    <color name="tab_selected_color">#000000</color>
+    <color name="my_light_primary_dan">#EEF0EF</color>
+    <color name="background_card_color">#BFf5f5f5</color>
+    <color name="button_pressed_color">#FFDDDDDD</color> <!-- 按下时的颜色 -->
+    <color name="button_normal_color">#FFFFFFFF</color>
+    <color name="button_ripple_color">#B13A32</color> <!-- 正常状态的颜色（白色） -->
+    <color name="button_trans_color">#B3FFFFFF</color>
+</resources>

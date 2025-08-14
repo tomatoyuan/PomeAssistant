@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="4dp"
+    android:background="@color/white"
+    android:alpha="0.8"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/tianshiyantidaziku"
+                android:text="Title"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/completion_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="背诵完成日期: "
+                android:textSize="16sp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/recitation_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="复习次数: "
+                android:textSize="16sp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/task1"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:text="背诵错题集" />
+
+                    <TextView
+                        android:id="@+id/btn_item1"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="42dp"
+                        android:text="展开⟩"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/task2"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:text="默写错题集" />
+
+                    <TextView
+                        android:id="@+id/btn_item2"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="42dp"
+                        android:text="展开⟩"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/task3"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:text="简答题错题集" />
+
+                    <TextView
+                        android:id="@+id/btn_item3"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="展开⟩"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/task4"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:text="应用题错题集" />
+
+                    <TextView
+                        android:id="@+id/btn_item4"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="展开⟩"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/task5"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:text="作文素材积累" />
+
+                    <TextView
+                        android:id="@+id/btn_item5"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="展开⟩"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/pic_cloud2"
+            android:scaleType="fitXY"
+            android:layout_gravity="bottom"
+            android:layout_height="160dp"/>
+
+<!--        <FrameLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:layout_height="160dp">-->
+
+<!--            &lt;!&ndash; Main Image &ndash;&gt;-->
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:src="@drawable/pic_cloud2"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:layout_gravity="bottom" />-->
+
+<!--            &lt;!&ndash; Small Icon in Bottom Right Corner &ndash;&gt;-->
+<!--            <ImageView-->
+<!--                android:id="@+id/btn_chart"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:src="@drawable/ic_chart"-->
+<!--                android:layout_gravity="bottom|end"-->
+<!--                android:layout_margin="8dp" />-->
+
+<!--        </FrameLayout>-->
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
