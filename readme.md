@@ -4,9 +4,7 @@
 
 ## 功能演示
 
-<video src="功能演示.mp4"></video>
-
-
+<video src="功能演示视频.mp4"></video>
 
 ## 技术架构
 
