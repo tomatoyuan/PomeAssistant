@@ -4,7 +4,9 @@
 
 ## 功能演示
 
-雅韵智诵app的功能演示视频见 `功能演示视频.mp4`
+点击跳转👇雅韵智诵app的功能演示视频👇
+
+[![logo_finnal](readme.assets/logo_finnal.png)](https://www.bilibili.com/video/BV1t2YqzpExA)
 
 ## 技术架构
 
