@@ -119,7 +119,8 @@ public class ImageIdentifyActivity extends AppCompatActivity {
                 }
             }
             if (allGranted) {
-//                openGallery();
+                // 图像来源：直接拍摄或从相册选择
+                // openGallery();
                 openAlbum();
             } else {
                 Toast.makeText(this, "权限被拒绝", Toast.LENGTH_SHORT).show();
@@ -139,5 +140,4 @@ public class ImageIdentifyActivity extends AppCompatActivity {
     private void startCamera() {
         startActivity(intent2);//进入camera的窗口界面
     }
-
 }
